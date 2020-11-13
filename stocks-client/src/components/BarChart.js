@@ -39,6 +39,7 @@ const BarChart = () => {
         const ctx = document.querySelector('#stocks')
         const tempsChart = new Chart(ctx, {
             type: 'line',
+            // type: 'bar',
             data: data
         })
     }

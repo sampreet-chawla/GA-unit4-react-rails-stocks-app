@@ -6,7 +6,7 @@ class StocksController < ApplicationController
   def index
     @stocks = Stock.all
 
-    render json: @stocks
+    render json: @stocks.to_json(include: :average_prices)
   end
 
   # GET /stocks/1
